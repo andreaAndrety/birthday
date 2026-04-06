@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva ¡Feliz Cumpleaños!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="container">
+        <header class="header">
+            <h1>¡Falta muy poco para tu cumpleaños!</h1>
+            <p>12 de Abril</p>
+        </header>
+
+        <section class="countdown-section">
+            <div class="glass-panel countdown-panel">
+                <div class="time-block">
+                    <span id="days" class="number">00</span>
+                    <span class="label">Días</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-block">
+                    <span id="hours" class="number">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-block">
+                    <span id="minutes" class="number">00</span>
+                    <span class="label">Minutos</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-block">
+                    <span id="seconds" class="number">00</span>
+                    <span class="label">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <div class="glass-panel message-panel">
+                <h2 id="message-title">Mensaje de Hoy</h2>
+                <div class="divider"></div>
+                <p id="daily-message" class="message-text">Cargando sorpresa...</p>
+                <div class="snoopy-paw">🐾</div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>Con mucho amor ❤️ para ti.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

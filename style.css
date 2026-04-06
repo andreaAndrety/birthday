@@ -1,0 +1,234 @@
+:root {
+    --primary-red: #e32636;
+    --primary-red-hover: #c41e2b;
+    --woodstock-yellow: #fcd116;
+    --snoopy-white: #ffffff;
+    --snoopy-black: #1a1a1a;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--snoopy-black);
+    background-color: var(--snoopy-black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url('assets/snoopy_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(227, 38, 54, 0.4) 0%, rgba(26, 26, 26, 0.6) 100%);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    text-align: center;
+    color: var(--snoopy-white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: fadeInDown 1s ease-out;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.header p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--woodstock-yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: var(--glass-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Countdown Section */
+.countdown-section {
+    animation: fadeIn 1.2s ease-out;
+}
+
+.countdown-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.number {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 900;
+    color: var(--primary-red);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--snoopy-black);
+    margin-top: 0.5rem;
+}
+
+.time-separator {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 900;
+    color: var(--snoopy-black);
+    margin-top: -1.5rem;
+    animation: pulse 1s infinite alternate;
+}
+
+/* Message Section */
+.message-section {
+    animation: fadeInUp 1s ease-out 0.3s backwards;
+}
+
+.message-panel {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 8px solid var(--primary-red);
+}
+
+#message-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--snoopy-black);
+    margin-bottom: 1rem;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--woodstock-yellow);
+    margin: 0 auto 1.5rem auto;
+    border-radius: 2px;
+}
+
+.message-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #333;
+}
+
+.snoopy-paw {
+    font-size: 2rem;
+    margin-top: 2rem;
+    opacity: 0.8;
+    animation: bounce 2s infinite;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: var(--snoopy-white);
+    font-weight: 500;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    animation: fadeIn 1.5s ease-out 0.6s backwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .time-separator {
+        display: none;
+    }
+    
+    .countdown-panel {
+        gap: 1.5rem;
+    }
+    
+    .time-block {
+        width: 40%;
+    }
+}
