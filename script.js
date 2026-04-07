@@ -8,27 +8,27 @@ const dailyMessages = {
     },
     "4/7": {
         title: "¡Un día menos!",
-        text: "Cada día que pasa me emociono más. Eres mi luz y espero que hoy tengas un día tan increíble como tú. ¡Sonríe, que ya casi es tu día!"
+        text: "Cada día que pasa me emociono más. Eres lo mas bello de Sincelejo y sus alrededores y espero que hoy tengas un día tan increíble como tú. ¡Sonríe, que ya casi es tu día!"
     },
     "4/8": {
         title: "Poco a poquito",
-        text: "No hay nada más lindo que verte crecer y compartir estos momentos contigo. Que hoy esté lleno de cosas buenas para ti."
+        text: "No hay nada más lindo que tu sonrisa, verte crecer y compartir estos momentos contigo. Que hoy esté lleno de cosas buenas para ti."
     },
     "4/9": {
         title: "¡Ya falta tan poco!",
-        text: "Pienso en celebrar tu vida y no puedo evitar ser feliz. Gracias por cada risa y por ser como eres. ¡Te quiero muchísimo!"
+        text: "Pienso en celebrar tu vida y no puedo evitar ser feliz. Gracias por ser como eres. ¡Te quiero muchísimo!"
     },
     "4/10": {
         title: "Solo faltan 2 días",
-        text: "¡A dos días de que el mundo se haga un poco más brillante celebrándote a ti! Prepárate para dejarte consentir todo el fin de semana."
+        text: "¡A dos días de que el mundo se haga un poco más brillante celebrándote a ti! Prepárate para disfrutar un fin de semana en un lugar nuevo."
     },
     "4/11": {
         title: "¡Mañana es el gran día!",
-        text: "Me muero de ganas de abrazarte y desearte un feliz cumpleaños de frente. Descansa mucho hoy porque mañana lo damos todo. ¡Feliz casi cumpleaños!"
+        text: "Me muero de ganas de abrazarte y desearte un feliz cumpleaños de frente. Descansa mucho hoy porque mañana sera un hermoso dia. ¡Feliz casi cumpleaños!"
     },
     "4/12": {
         title: "¡FELIZ CUMPLEAÑOS! 🎉",
-        text: "¡Al fin llegó tu día especial! Eres mi persona favorita en el mundo entero. Que todos tus sueños se cumplan y que seas inmensamente feliz hoy y siempre. ¡Te amo con todo mi corazón!"
+        text: "¡Al fin llegó tu día especial! Eres mi persona favorita en el mundo entero. Que todos tus sueños se cumplan y que seas inmensamente feliz hoy y siempre. ¡Te quiero con todo mi corazón!"
     }
 };
 
