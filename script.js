@@ -28,7 +28,8 @@ const dailyMessages = {
     },
     "4/12": {
         title: "¡FELIZ CUMPLEAÑOS! 🎉",
-        text: "¡Al fin llegó tu día especial! Eres mi persona favorita en el mundo entero. Que todos tus sueños se cumplan y que seas inmensamente feliz hoy y siempre. ¡Te quiero con todo mi corazón!"
+        text: "¡Al fin llegó tu día especial! Eres mi persona favorita en el mundo entero. Que todos tus sueños se cumplan y que seas inmensamente feliz hoy y siempre. ¡Te quiero con todo mi corazón!",
+        video: "https://www.youtube.com/embed/ehx5v9IXX08?autoplay=1"
     }
 };
 
@@ -48,6 +49,17 @@ function updateMessage() {
 
     document.getElementById('message-title').textContent = messageData.title;
     document.getElementById('daily-message').textContent = messageData.text;
+
+    const videoContainer = document.getElementById('video-container');
+    const videoIframe = document.getElementById('video-iframe');
+    
+    if (messageData.video) {
+        videoIframe.src = messageData.video;
+        videoContainer.style.display = 'block';
+    } else {
+        videoContainer.style.display = 'none';
+        videoIframe.src = '';
+    }
 }
 
 function updateCountdown() {
