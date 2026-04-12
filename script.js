@@ -27,7 +27,7 @@ const dailyMessages = {
         text: "Me muero de ganas de abrazarte y desearte un feliz cumpleaños de frente. Descansa mucho hoy porque mañana sera un hermoso dia. ¡Feliz casi cumpleaños!"
     },
     "4/12": {
-        title: "¡FELIZ CUMPLEAÑOS! 🎉",
+        title: "¡FELIZ CUMPLEAÑOS MI BONITA ! 🎉",
         text: "¡Al fin llegó tu día especial! Eres mi persona favorita en el mundo entero. Que todos tus sueños se cumplan y que seas inmensamente feliz hoy y siempre. ¡Te quiero con todo mi corazón!",
         video: "https://www.youtube.com/embed/ehx5v9IXX08?autoplay=1"
     }
@@ -52,7 +52,7 @@ function updateMessage() {
 
     const videoContainer = document.getElementById('video-container');
     const videoIframe = document.getElementById('video-iframe');
-    
+
     if (messageData.video) {
         videoIframe.src = messageData.video;
         videoContainer.style.display = 'block';
